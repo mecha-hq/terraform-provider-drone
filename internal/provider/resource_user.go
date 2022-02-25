@@ -37,8 +37,9 @@ func resourceUser() *schema.Resource {
 				Optional: true,
 			},
 			"token": {
-				Type:     schema.TypeString,
-				Optional: true,
+				Type:      schema.TypeString,
+				Optional:  true,
+				Sensitive: true,
 			},
 		},
 	}
