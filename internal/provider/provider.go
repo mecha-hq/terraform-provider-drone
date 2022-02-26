@@ -31,7 +31,10 @@ func New(version string) func() *schema.Provider {
 			},
 
 			ResourcesMap: map[string]*schema.Resource{
-				"drone_user": resourceUser(),
+				"drone_orgsecret": resourceOrgSecret(),
+				"drone_repo":      resourceRepo(),
+				"drone_secret":    resourceSecret(),
+				"drone_user":      resourceUser(),
 			},
 		}
 
