@@ -5,8 +5,9 @@ import (
 	"flag"
 	"log"
 
-	"github.com/FriendsOfDrone/terraform-provider-drone/internal/provider"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
+
+	"github.com/FriendsOfDrone/terraform-provider-drone/internal/provider"
 )
 
 //go:generate terraform fmt -recursive ./examples/
