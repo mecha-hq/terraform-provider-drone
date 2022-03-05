@@ -19,6 +19,7 @@ func resourceUser() *schema.Resource {
 			"active": {
 				Type:     schema.TypeBool,
 				Optional: true,
+				Default:  "true",
 			},
 			"admin": {
 				Type:     schema.TypeBool,
